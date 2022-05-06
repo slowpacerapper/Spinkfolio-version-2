@@ -24,8 +24,8 @@ export const MyTextTwo = styled.p`
   margin-top: 1rem;
 `;
 
-const MyHeading = styled.h3`
-  font-size: 72px;
+const MyHeading = styled.h1`
+  font-size: 62px;
   font-weight: 700;
   margin: 0;
   margin-left: -0.155rem;
@@ -34,7 +34,7 @@ const MyHeading = styled.h3`
 `;
 
 const MyHeadingTwo = styled.h3`
-  font-size: 72px;
+  font-size: 62px;
   font-weight: 700;
   margin: 0;
   line-height: 1;
@@ -68,7 +68,7 @@ const Introduction = () => {
     >
       <Grid
         direction="column"
-        p={3}
+        pt={3}
         container
         item
         xs={12}
@@ -84,7 +84,7 @@ const Introduction = () => {
         <MyTextTwo>
           I am a <MyAccent>frontend developer </MyAccent> that specializes in
           building awesome and wonderful interfaces and i also create
-          interactive experiences for people using 
+          interactive experiences for people using
           <MyAccent> modern web technology.</MyAccent>
         </MyTextTwo>
       </Grid>

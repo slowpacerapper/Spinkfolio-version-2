@@ -14,7 +14,8 @@ import { MyTextTwo } from "../Introduction/Introduction";
 import { projectsDb } from "../../Utils/ProjectsData";
 import styled from "styled-components";
 
-const Techs = styled.h3`
+const Techs = styled.li`
+  list-style-type: none;
   color: #7389a1;
   font-size: 14px;
   font-weight: 400;
@@ -88,7 +89,7 @@ const Projects = () => {
                     >
                       <BsFolder style={{ fontSize: "30px" }} />
                       <Box>
-                        <Button href={project.gitlink}>
+                        <Button href={project.gitlink} target="_blank">
                           <AiOutlineGithub
                             style={{
                               color: "white",
@@ -97,7 +98,7 @@ const Projects = () => {
                             }}
                           />
                         </Button>
-                        <Button href={project.weblink}>
+                        <Button href={project.weblink} target="_blank">
                           <FiExternalLink
                             style={{
                               fontSize: "25px",

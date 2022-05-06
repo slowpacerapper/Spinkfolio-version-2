@@ -9,7 +9,9 @@ export const MySpan = styled.b`
 `;
 
 export const MyButtons = {
-  fontSize: "16px",
+  display: "flex",
+  alignItems: "center",
+  fontSize: "18px",
   color: "var(--primary-text-color)",
   textTransform: "Capitalize",
   fontFamily: "Rajdhani",
@@ -59,20 +61,19 @@ const Navbar = () => {
           </Stack>
           <Stack direction="row" spacing={3}>
             <Button href="#intro" sx={MyButtons}>
-              <MySpan>01.</MySpan>
               Intro.
             </Button>
             <Button href="#about" sx={MyButtons}>
-              <MySpan>02.</MySpan> About
+              About
             </Button>
             <Button href="#skills" sx={MyButtons}>
-              <MySpan>03.</MySpan> Skills
+              Skills
             </Button>
             <Button href="#projects" sx={MyButtons}>
-              <MySpan>04.</MySpan> Projects
+              Projects
             </Button>
             <Button href="#contact" sx={MyButtons}>
-              <MySpan>05.</MySpan>Contact
+              Contact
             </Button>
           </Stack>
         </Grid>

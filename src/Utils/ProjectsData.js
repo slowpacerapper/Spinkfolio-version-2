@@ -53,7 +53,7 @@ export const projectsDb = [
     title: "Portfolio V2",
     description:
       "My portfolio website which contains my projects and other information about me",
-    gitlink: "https://github.com/slowpacerapper/Porfolio",
-    weblink: "https://spink-portfolio.netlify.app",
+    gitlink: "https://github.com/slowpacerapper/Spinkfolio-version-2",
+    weblink: "https://spinkfolio.netlify.app",
   },
 ];

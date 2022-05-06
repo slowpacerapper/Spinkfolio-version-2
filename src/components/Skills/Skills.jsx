@@ -10,11 +10,11 @@ import {
 import { MyTextTwo } from "../Introduction/Introduction";
 import { SkillsDb } from "../../Utils/SkillsData";
 
-export const SkillsHead = styled.h3`
+export const SkillsHead = styled.h4`
   display: flex;
   align-items: center;
   width: 100%;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
   flex: 4;
   color: var(--primary-text-color);
@@ -77,17 +77,7 @@ const Skills = () => {
         >
           {someSkills.map((skills) => {
             return (
-              <Grid
-                sx={{
-                  "&:hover": {
-                    transform: "translateY(-2%)",
-                    transition: "all 0.3s ease-in-out",
-                  },
-                }}
-                item
-                md={6}
-                key={skills.id}
-              >
+              <Grid item md={6} key={skills.id}>
                 <Box sx={{ margin: "1rem" }}>
                   <SkillsHead>
                     {skills.skil}
